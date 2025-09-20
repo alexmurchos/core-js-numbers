@@ -303,8 +303,10 @@ function getSumToN(n) {
  *   202 => 4  // (2+0+2)
  *   5   => 5  // 5
  */
-function getSumOfDigits(/* num */) {
-  throw new Error('Not implemented');
+function getSumOfDigits(num) {
+  const arr = String(num).split('');
+  const result = arr.reduce((sum, current) => sum + +current, 0);
+  return result;
 }
 
 /**
